@@ -2,9 +2,12 @@
 // Displays a single paper/research entry (read-only view).
 import type { Paper } from '@/lib/types'
 
-export default function PaperCard({ item }: { item: Paper }) {
+export default function PaperCard({ item, onClick }: { item: Paper; onClick?: () => void }) {
   return (
-    <div className="border border-border bg-bg-primary p-3 mb-1">
+    <div
+      className="border border-border bg-bg-primary p-3 mb-1 cursor-pointer hover:border-text-secondary hover:bg-bg-secondary transition-colors"
+      onClick={onClick}
+    >
       <div className="flex justify-between items-start mb-2">
         <div className="flex-1 mr-3">
           <div className="text-[10px] font-bold leading-snug">{item.title}</div>

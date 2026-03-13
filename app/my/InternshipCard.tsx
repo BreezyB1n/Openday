@@ -2,9 +2,12 @@
 // Displays a single internship entry (read-only view).
 import type { Internship } from '@/lib/types'
 
-export default function InternshipCard({ item }: { item: Internship }) {
+export default function InternshipCard({ item, onClick }: { item: Internship; onClick?: () => void }) {
   return (
-    <div className="border border-border bg-bg-primary p-3 mb-1">
+    <div
+      className="border border-border bg-bg-primary p-3 mb-1 cursor-pointer hover:border-text-secondary hover:bg-bg-secondary transition-colors"
+      onClick={onClick}
+    >
       <div className="flex justify-between items-start mb-1">
         <div>
           <div className="text-[11px] font-bold">{item.company}</div>
