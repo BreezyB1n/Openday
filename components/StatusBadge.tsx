@@ -6,25 +6,26 @@ type Props = {
 
 const statusConfig: Record<ProgramStatus, { label: string; className: string }> = {
   open: {
-    label: '申请开放',
-    className: 'bg-green-100 text-green-800',
+    label: 'OPEN',
+    className: 'text-accent-green border-accent-green bg-green-50',
   },
   closed: {
-    label: '已截止',
-    className: 'bg-gray-100 text-gray-600',
+    label: 'CLOSED',
+    className: 'text-text-secondary border-border',
   },
   pending: {
-    label: '待定',
-    className: 'bg-yellow-100 text-yellow-700',
+    label: 'PENDING',
+    className: 'text-accent-yellow border-yellow-300 bg-yellow-50',
   },
 }
 
 export default function StatusBadge({ status }: Props) {
-  const { label, className } = statusConfig[status]
+  const { label, className } = statusConfig[status] ?? statusConfig.pending
 
   return (
     <span
-      className={`inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium ${className}`}
+      className={`inline-flex items-center px-1.5 py-0.5 border text-[9px] tracking-[0.08em] font-mono ${className}`}
+      aria-label={status === 'open' ? '申请开放' : status === 'closed' ? '已截止' : '待定'}
     >
       {label}
     </span>
