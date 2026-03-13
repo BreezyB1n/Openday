@@ -6,6 +6,7 @@
 import { useState, useEffect } from 'react'
 import type { UserProfile, ApplicationRecord } from '@/lib/types'
 import { loadProfile, saveProfile, createEmptyProfile, loadKanban, saveKanban } from '@/lib/storage'
+import { DEV_EMAIL, devProfile, devKanban } from '@/lib/dev-seed'
 import ProfileSidebar from './ProfileSidebar'
 import ApplicationKanban from './ApplicationKanban'
 
@@ -15,6 +16,11 @@ export default function MyPageContent({ email }: { email: string }) {
   const [mounted, setMounted] = useState(false)
 
   useEffect(() => {
+    // Seed dev account with fake data if localStorage is empty
+    if (email === DEV_EMAIL && !loadProfile(email)) {
+      saveProfile(devProfile)
+      saveKanban(email, devKanban)
+    }
     const p = loadProfile(email) ?? createEmptyProfile(email)
     setProfile(p)
     setRecords(loadKanban(email))
