@@ -37,8 +37,8 @@ export default function EditProgramPage({ params }: { params: Promise<{ id: stri
   if (!program) {
     return (
       <div className="text-center py-12">
-        <p className="text-gray-500">项目不存在</p>
-        <Link href="/admin/programs" className="text-blue-600 hover:underline text-sm mt-2 inline-block">
+        <p className="text-text-secondary">项目不存在</p>
+        <Link href="/admin/programs" className="text-accent-blue hover:underline text-sm mt-2 inline-block">
           返回项目列表
         </Link>
       </div>
@@ -69,28 +69,28 @@ export default function EditProgramPage({ params }: { params: Promise<{ id: stri
   return (
     <div>
       <div className="flex items-center gap-3 mb-6">
-        <Link href="/admin/programs" className="text-gray-500 hover:text-gray-700 text-sm">← 返回</Link>
-        <h1 className="text-2xl font-bold text-gray-900">编辑项目</h1>
+        <Link href="/admin/programs" className="text-text-secondary hover:text-gray-700 text-sm">← 返回</Link>
+        <h1 className="text-2xl font-bold text-text-primary">编辑项目</h1>
       </div>
 
       <div className="flex gap-6">
         {/* Edit form */}
-        <form onSubmit={handleSubmit} className="bg-white rounded-xl border border-gray-200 p-6 flex-1 max-w-2xl">
+        <form onSubmit={handleSubmit} className="bg-bg-primary border border-border p-6 flex-1 max-w-2xl">
           <div className="grid grid-cols-2 gap-4">
             <div>
               <label className="block text-sm font-medium text-gray-700 mb-1">项目名 *</label>
               <input required value={form.name} onChange={e => set('name', e.target.value)}
-                className="w-full border border-gray-300 rounded-lg px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500" />
+                className="w-full border border-border bg-white px-3 py-2 text-sm focus:outline-none focus:border-accent-blue" />
             </div>
             <div>
               <label className="block text-sm font-medium text-gray-700 mb-1">学校 *</label>
               <input required value={form.school} onChange={e => set('school', e.target.value)}
-                className="w-full border border-gray-300 rounded-lg px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500" />
+                className="w-full border border-border bg-white px-3 py-2 text-sm focus:outline-none focus:border-accent-blue" />
             </div>
             <div>
               <label className="block text-sm font-medium text-gray-700 mb-1">国家</label>
               <select value={form.country} onChange={e => set('country', e.target.value)}
-                className="w-full border border-gray-300 rounded-lg px-3 py-2 text-sm">
+                className="w-full border border-border bg-white px-3 py-2 text-sm">
                 <option value="US">🇺🇸 美国</option>
                 <option value="UK">🇬🇧 英国</option>
                 <option value="AU">🇦🇺 澳大利亚</option>
@@ -101,7 +101,7 @@ export default function EditProgramPage({ params }: { params: Promise<{ id: stri
             <div>
               <label className="block text-sm font-medium text-gray-700 mb-1">学位</label>
               <select value={form.degree} onChange={e => set('degree', e.target.value)}
-                className="w-full border border-gray-300 rounded-lg px-3 py-2 text-sm">
+                className="w-full border border-border bg-white px-3 py-2 text-sm">
                 <option value="bachelor">本科</option>
                 <option value="master">硕士</option>
                 <option value="phd">博士</option>
@@ -110,12 +110,12 @@ export default function EditProgramPage({ params }: { params: Promise<{ id: stri
             <div>
               <label className="block text-sm font-medium text-gray-700 mb-1">专业方向</label>
               <input value={form.field} onChange={e => set('field', e.target.value)}
-                className="w-full border border-gray-300 rounded-lg px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500" />
+                className="w-full border border-border bg-white px-3 py-2 text-sm focus:outline-none focus:border-accent-blue" />
             </div>
             <div>
               <label className="block text-sm font-medium text-gray-700 mb-1">申请状态</label>
               <select value={form.status} onChange={e => set('status', e.target.value)}
-                className="w-full border border-gray-300 rounded-lg px-3 py-2 text-sm">
+                className="w-full border border-border bg-white px-3 py-2 text-sm">
                 <option value="open">申请开放</option>
                 <option value="closed">已截止</option>
                 <option value="pending">待定</option>
@@ -124,43 +124,43 @@ export default function EditProgramPage({ params }: { params: Promise<{ id: stri
             <div>
               <label className="block text-sm font-medium text-gray-700 mb-1">截止日期</label>
               <input type="date" value={form.deadline} onChange={e => set('deadline', e.target.value)}
-                className="w-full border border-gray-300 rounded-lg px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500" />
+                className="w-full border border-border bg-white px-3 py-2 text-sm focus:outline-none focus:border-accent-blue" />
             </div>
             <div>
               <label className="block text-sm font-medium text-gray-700 mb-1">申请链接 *</label>
               <input required type="url" value={form.applyUrl} onChange={e => set('applyUrl', e.target.value)}
-                className="w-full border border-gray-300 rounded-lg px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500" />
+                className="w-full border border-border bg-white px-3 py-2 text-sm focus:outline-none focus:border-accent-blue" />
             </div>
             <div>
               <label className="block text-sm font-medium text-gray-700 mb-1">语言要求</label>
               <input value={form.languageReq} onChange={e => set('languageReq', e.target.value)}
-                className="w-full border border-gray-300 rounded-lg px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500" />
+                className="w-full border border-border bg-white px-3 py-2 text-sm focus:outline-none focus:border-accent-blue" />
             </div>
             <div>
               <label className="block text-sm font-medium text-gray-700 mb-1">GPA 要求</label>
               <input type="number" step="0.1" value={form.gpaReq} onChange={e => set('gpaReq', e.target.value)}
-                className="w-full border border-gray-300 rounded-lg px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500" />
+                className="w-full border border-border bg-white px-3 py-2 text-sm focus:outline-none focus:border-accent-blue" />
             </div>
             <div>
               <label className="block text-sm font-medium text-gray-700 mb-1">申请费 (USD)</label>
               <input type="number" value={form.fee} onChange={e => set('fee', e.target.value)}
-                className="w-full border border-gray-300 rounded-lg px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500" />
+                className="w-full border border-border bg-white px-3 py-2 text-sm focus:outline-none focus:border-accent-blue" />
             </div>
           </div>
           <div className="mt-4">
             <label className="block text-sm font-medium text-gray-700 mb-1">项目简介</label>
             <textarea rows={3} value={form.description} onChange={e => set('description', e.target.value)}
-              className="w-full border border-gray-300 rounded-lg px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500" />
+              className="w-full border border-border bg-white px-3 py-2 text-sm focus:outline-none focus:border-accent-blue" />
           </div>
 
           {/* Notify button */}
-          <div className="mt-4 p-4 bg-green-50 rounded-lg border border-green-200">
+          <div className="mt-4 p-4 bg-green-50 border border-green-200">
             <h3 className="text-sm font-medium text-green-800 mb-2">推送通知</h3>
             <button
               type="button"
               onClick={handleNotify}
               disabled={notifying}
-              className="bg-green-600 text-white px-4 py-2 rounded-lg text-sm hover:bg-green-700 disabled:opacity-50"
+              className="bg-green-600 text-white px-4 py-2 text-sm hover:bg-green-700 disabled:opacity-50"
             >
               {notifying ? '推送中...' : '触发推送通知'}
             </button>
@@ -171,10 +171,10 @@ export default function EditProgramPage({ params }: { params: Promise<{ id: stri
 
           <div className="mt-4 flex gap-3">
             <button type="submit" disabled={saving}
-              className="bg-blue-600 text-white px-6 py-2 rounded-lg text-sm hover:bg-blue-700 disabled:opacity-50">
+              className="bg-accent-blue text-white px-6 py-2 text-sm hover:bg-accent-blue-dark disabled:opacity-50">
               {saving ? '保存中...' : '保存修改'}
             </button>
-            <Link href="/admin/programs" className="border border-gray-300 text-gray-600 px-6 py-2 rounded-lg text-sm hover:bg-gray-50">
+            <Link href="/admin/programs" className="border border-border text-gray-600 px-6 py-2 text-sm hover:bg-gray-50">
               取消
             </Link>
           </div>
@@ -182,11 +182,11 @@ export default function EditProgramPage({ params }: { params: Promise<{ id: stri
 
         {/* Change log */}
         <div className="w-72 flex-shrink-0">
-          <div className="bg-white rounded-xl border border-gray-200 p-4">
-            <h3 className="font-medium text-gray-900 mb-3 text-sm">变更记录</h3>
+          <div className="bg-bg-primary border border-border p-4">
+            <h3 className="font-medium text-text-primary mb-3 text-sm">变更记录</h3>
             <div className="space-y-3">
               {mockChangeLogs.map(log => (
-                <div key={log.id} className="text-xs border-l-2 border-gray-200 pl-3">
+                <div key={log.id} className="text-xs border-l-2 border-border pl-3">
                   <p className="text-gray-700">{log.note}</p>
                   <p className="text-gray-400 mt-0.5">
                     {new Date(log.changedAt).toLocaleDateString('zh-CN')}
