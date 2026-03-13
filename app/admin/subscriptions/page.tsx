@@ -18,57 +18,57 @@ export default async function AdminSubscriptionsPage({
 
   return (
     <div>
-      <h1 className="text-2xl font-bold text-gray-900 mb-6">订阅者管理</h1>
+      <h1 className="text-2xl font-bold text-text-primary mb-6">订阅者管理</h1>
 
       {/* Filter tabs */}
       <div className="flex gap-2 mb-6">
         <Link
           href="/admin/subscriptions"
-          className={`px-4 py-2 rounded-lg text-sm transition-colors ${
+          className={`px-4 py-2 text-sm transition-colors ${
             !params.verified
-              ? 'bg-blue-600 text-white'
-              : 'bg-white border border-gray-300 text-gray-600 hover:bg-gray-50'
+              ? 'bg-accent-blue text-white'
+              : 'bg-white border border-border text-gray-600 hover:bg-gray-50'
           }`}
         >
           全部
         </Link>
         <Link
           href="/admin/subscriptions?verified=true"
-          className={`px-4 py-2 rounded-lg text-sm transition-colors ${
+          className={`px-4 py-2 text-sm transition-colors ${
             params.verified === 'true'
-              ? 'bg-blue-600 text-white'
-              : 'bg-white border border-gray-300 text-gray-600 hover:bg-gray-50'
+              ? 'bg-accent-blue text-white'
+              : 'bg-white border border-border text-gray-600 hover:bg-gray-50'
           }`}
         >
           ✅ 已验证
         </Link>
         <Link
           href="/admin/subscriptions?verified=false"
-          className={`px-4 py-2 rounded-lg text-sm transition-colors ${
+          className={`px-4 py-2 text-sm transition-colors ${
             params.verified === 'false'
-              ? 'bg-blue-600 text-white'
-              : 'bg-white border border-gray-300 text-gray-600 hover:bg-gray-50'
+              ? 'bg-accent-blue text-white'
+              : 'bg-white border border-border text-gray-600 hover:bg-gray-50'
           }`}
         >
           ⏳ 未验证
         </Link>
       </div>
 
-      <div className="bg-white rounded-xl border border-gray-200 overflow-hidden">
+      <div className="bg-bg-primary border border-border overflow-hidden">
         <table className="w-full text-sm">
           <thead>
-            <tr className="bg-gray-50 border-b border-gray-200">
-              <th className="text-left px-4 py-3 font-medium text-gray-600">邮箱</th>
-              <th className="text-left px-4 py-3 font-medium text-gray-600">学位偏好</th>
-              <th className="text-left px-4 py-3 font-medium text-gray-600">专业偏好</th>
-              <th className="text-left px-4 py-3 font-medium text-gray-600">国家偏好</th>
-              <th className="text-left px-4 py-3 font-medium text-gray-600">验证状态</th>
-              <th className="text-left px-4 py-3 font-medium text-gray-600">订阅时间</th>
+            <tr className="bg-bg-primary border-b border-border">
+              <th className="text-left px-4 py-3 font-medium text-text-secondary">邮箱</th>
+              <th className="text-left px-4 py-3 font-medium text-text-secondary">学位偏好</th>
+              <th className="text-left px-4 py-3 font-medium text-text-secondary">专业偏好</th>
+              <th className="text-left px-4 py-3 font-medium text-text-secondary">国家偏好</th>
+              <th className="text-left px-4 py-3 font-medium text-text-secondary">验证状态</th>
+              <th className="text-left px-4 py-3 font-medium text-text-secondary">订阅时间</th>
             </tr>
           </thead>
           <tbody className="divide-y divide-gray-100">
             {filtered.map(sub => (
-              <tr key={sub.id} className="hover:bg-gray-50">
+              <tr key={sub.id} className="hover:bg-bg-primary">
                 <td className="px-4 py-3 font-medium">{sub.email}</td>
                 <td className="px-4 py-3 text-gray-600">
                   {sub.degrees.map(d => degreeLabels[d] || d).join('、')}

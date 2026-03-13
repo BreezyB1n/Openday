@@ -26,10 +26,10 @@ export default async function AdminProgramsPage({
   return (
     <div>
       <div className="flex items-center justify-between mb-6">
-        <h1 className="text-2xl font-bold text-gray-900">项目管理</h1>
+        <h1 className="text-2xl font-bold text-text-primary">项目管理</h1>
         <Link
           href="/admin/programs/new"
-          className="bg-blue-600 text-white px-4 py-2 rounded-lg text-sm hover:bg-blue-700 transition-colors"
+          className="bg-accent-blue text-white px-4 py-2 text-sm hover:bg-accent-blue-dark transition-colors"
         >
           + 新增项目
         </Link>
@@ -41,15 +41,15 @@ export default async function AdminProgramsPage({
           name="q"
           defaultValue={params.q}
           placeholder="搜索学校或项目..."
-          className="border border-gray-300 rounded-lg px-3 py-1.5 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
+          className="border border-border px-3 py-1.5 text-sm focus:outline-none focus:border-accent-blue"
         />
-        <select name="status" defaultValue={params.status || ''} className="border border-gray-300 rounded-lg px-3 py-1.5 text-sm">
+        <select name="status" defaultValue={params.status || ''} className="border border-border px-3 py-1.5 text-sm">
           <option value="">全部状态</option>
           <option value="open">申请开放</option>
           <option value="closed">已截止</option>
           <option value="unknown">待定</option>
         </select>
-        <select name="country" defaultValue={params.country || ''} className="border border-gray-300 rounded-lg px-3 py-1.5 text-sm">
+        <select name="country" defaultValue={params.country || ''} className="border border-border px-3 py-1.5 text-sm">
           <option value="">全部国家</option>
           <option value="US">🇺🇸 美国</option>
           <option value="UK">🇬🇧 英国</option>
@@ -57,36 +57,36 @@ export default async function AdminProgramsPage({
           <option value="CA">🇨🇦 加拿大</option>
           <option value="SG">🇸🇬 新加坡</option>
         </select>
-        <button type="submit" className="bg-gray-100 text-gray-700 px-4 py-1.5 rounded-lg text-sm hover:bg-gray-200">
+        <button type="submit" className="bg-gray-100 text-gray-700 px-4 py-1.5 text-sm hover:bg-gray-200">
           筛选
         </button>
-        <Link href="/admin/programs" className="text-gray-500 text-sm py-1.5 hover:text-gray-700">
+        <Link href="/admin/programs" className="text-text-secondary text-sm py-1.5 hover:text-gray-700">
           重置
         </Link>
       </form>
 
-      <div className="bg-white rounded-xl border border-gray-200 overflow-hidden">
+      <div className="bg-bg-primary border border-border overflow-hidden">
         <table className="w-full text-sm">
           <thead>
-            <tr className="bg-gray-50 border-b border-gray-200">
-              <th className="text-left px-4 py-3 font-medium text-gray-600">学校</th>
-              <th className="text-left px-4 py-3 font-medium text-gray-600">项目名</th>
-              <th className="text-left px-4 py-3 font-medium text-gray-600">国家</th>
-              <th className="text-left px-4 py-3 font-medium text-gray-600">学位</th>
-              <th className="text-left px-4 py-3 font-medium text-gray-600">状态</th>
-              <th className="text-left px-4 py-3 font-medium text-gray-600">截止日期</th>
-              <th className="text-left px-4 py-3 font-medium text-gray-600">操作</th>
+            <tr className="bg-bg-primary border-b border-border">
+              <th className="text-left px-4 py-3 font-medium text-text-secondary">学校</th>
+              <th className="text-left px-4 py-3 font-medium text-text-secondary">项目名</th>
+              <th className="text-left px-4 py-3 font-medium text-text-secondary">国家</th>
+              <th className="text-left px-4 py-3 font-medium text-text-secondary">学位</th>
+              <th className="text-left px-4 py-3 font-medium text-text-secondary">状态</th>
+              <th className="text-left px-4 py-3 font-medium text-text-secondary">截止日期</th>
+              <th className="text-left px-4 py-3 font-medium text-text-secondary">操作</th>
             </tr>
           </thead>
           <tbody className="divide-y divide-gray-100">
             {filtered.map(program => (
-              <tr key={program.id} className="hover:bg-gray-50">
+              <tr key={program.id} className="hover:bg-bg-primary">
                 <td className="px-4 py-3 font-medium">{program.school}</td>
                 <td className="px-4 py-3 text-gray-700 max-w-xs truncate">{program.name}</td>
                 <td className="px-4 py-3">{program.country}</td>
                 <td className="px-4 py-3">{degreeLabels[program.degree]}</td>
                 <td className="px-4 py-3"><StatusBadge status={program.status} /></td>
-                <td className="px-4 py-3 text-gray-500">{program.deadline || '—'}</td>
+                <td className="px-4 py-3 text-text-secondary">{program.deadline || '—'}</td>
                 <td className="px-4 py-3">
                   <AdminProgramActions programId={program.id} />
                 </td>
