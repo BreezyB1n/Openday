@@ -1,0 +1,30 @@
+@import "tailwindcss";
+
+@theme {
+  /* 颜色 */
+  --color-bg-primary: #f5f4f0;
+  --color-bg-secondary: #ece9e0;
+  --color-bg-inverse: #1a1a1a;
+  --color-text-primary: #1a1a1a;
+  --color-text-secondary: #555555;
+  --color-text-muted: #999999;
+  --color-text-inverse: #f5f4f0;
+  --color-border: #cccccc;
+  --color-border-light: #e5e5e5;
+  --color-accent-blue: #2563eb;
+  --color-accent-blue-dark: #1d4ed8;
+  --color-accent-green: #16a34a;
+  --color-accent-orange: #e85d04;
+  --color-accent-yellow: #d97706;
+
+  /* 字体 */
+  --font-mono: 'Courier New', 'Menlo', monospace;
+  --font-sans: -apple-system, 'PingFang SC', sans-serif;
+}
+
+/* 全局 body 默认字体为等宽，背景为米白 */
+body {
+  background-color: #f5f4f0;
+  font-family: 'Courier New', 'Menlo', monospace;
+  color: #1a1a1a;
+}
