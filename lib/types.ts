@@ -46,3 +46,62 @@ export type ProgramFilters = {
   q?: string
   page?: number
 }
+
+// ── My Page types ──────────────────────────────────────
+
+export type Internship = {
+  id: string
+  company: string
+  role: string
+  department?: string
+  startDate: string   // "YYYY.MM"
+  endDate: string     // "YYYY.MM"
+  description: string
+  tags: string[]
+}
+
+export type Paper = {
+  id: string
+  title: string
+  authorOrder: string // e.g. "第一作者"
+  venue: string       // e.g. "ACL 2024"
+  year: number
+  tags: string[]
+}
+
+export type UserProfile = {
+  email: string
+  currentDegree: string
+  school: string
+  major: string
+  targetYear: string  // e.g. "2026 Fall"
+  gpa: string         // bare numeric string e.g. "3.8"
+  rank?: string
+  ielts?: string      // bare numeric string e.g. "7.0"
+  toefl?: string
+  gre?: string
+  gmat?: string
+  internships: Internship[]
+  papers: Paper[]
+}
+
+export type MaterialItem = {
+  name: string
+  done: boolean
+}
+
+export type ApplicationStatus = 'planning' | 'preparing' | 'submitted' | 'result'
+export type ApplicationResult = 'offer' | 'declined' | 'waitlist'
+
+export type ApplicationRecord = {
+  id: string
+  programId: string
+  email: string
+  status: ApplicationStatus
+  // result is only meaningful when status === 'result'; undefined otherwise
+  result?: ApplicationResult
+  submittedAt?: string  // ISO date, only when status is 'submitted' or 'result'
+  resultAt?: string     // ISO date, only when status === 'result' and result is known
+  materials: MaterialItem[]
+  notes?: string
+}
