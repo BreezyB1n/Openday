@@ -27,6 +27,12 @@ export default function Header() {
           >
             02. SUBSCRIBE
           </Link>
+          <Link
+            href="/my"
+            className="flex items-center text-[10px] tracking-[0.15em] text-text-secondary hover:bg-bg-secondary hover:text-text-primary px-4 border-r border-border transition-colors"
+          >
+            03. MY_PAGE
+          </Link>
         </nav>
 
         {/* CTA */}
