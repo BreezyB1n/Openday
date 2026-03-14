@@ -1,0 +1,135 @@
+[
+  {
+    "name": "Master of Science in Computer Science",
+    "school": "Massachusetts Institute of Technology",
+    "country": "US",
+    "degree": "master",
+    "field": "Computer Science",
+    "apply_url": "https://gradadmissions.mit.edu/programs/eecs",
+    "monitor_url": "https://gradadmissions.mit.edu/programs/eecs"
+  },
+  {
+    "name": "Master of Science in Electrical Engineering",
+    "school": "Massachusetts Institute of Technology",
+    "country": "US",
+    "degree": "master",
+    "field": "Electrical Engineering",
+    "apply_url": "https://gradadmissions.mit.edu/programs/eecs",
+    "monitor_url": "https://gradadmissions.mit.edu/programs/eecs"
+  },
+  {
+    "name": "PhD in Computer Science",
+    "school": "Massachusetts Institute of Technology",
+    "country": "US",
+    "degree": "phd",
+    "field": "Computer Science",
+    "apply_url": "https://gradadmissions.mit.edu/programs/eecs/phd",
+    "monitor_url": "https://gradadmissions.mit.edu/programs/eecs/phd"
+  },
+  {
+    "name": "Master of Science in Computer Science",
+    "school": "Stanford University",
+    "country": "US",
+    "degree": "master",
+    "field": "Computer Science",
+    "apply_url": "https://gradadmissions.stanford.edu/programs/ms-computer-science",
+    "monitor_url": "https://gradadmissions.stanford.edu/programs/ms-computer-science",
+    "monitor_selector": ".application-status"
+  },
+  {
+    "name": "Master of Business Administration",
+    "school": "Stanford University",
+    "country": "US",
+    "degree": "master",
+    "field": "Business Administration",
+    "apply_url": "https://www.gsb.stanford.edu/programs/mba/admission/apply",
+    "monitor_url": "https://www.gsb.stanford.edu/programs/mba/admission/apply",
+    "monitor_selector": ".apply-now-btn"
+  },
+  {
+    "name": "PhD in Electrical Engineering",
+    "school": "Stanford University",
+    "country": "US",
+    "degree": "phd",
+    "field": "Electrical Engineering",
+    "apply_url": "https://gradadmissions.stanford.edu/programs/phd-electrical-engineering",
+    "monitor_url": "https://gradadmissions.stanford.edu/programs/phd-electrical-engineering"
+  },
+  {
+    "name": "MPhil in Advanced Computer Science",
+    "school": "University of Cambridge",
+    "country": "GB",
+    "degree": "master",
+    "field": "Computer Science",
+    "apply_url": "https://www.postgraduate.study.cam.ac.uk/courses/directory/cscsmpacs",
+    "monitor_url": "https://www.postgraduate.study.cam.ac.uk/courses/directory/cscsmpacs",
+    "monitor_selector": ".course-availability"
+  },
+  {
+    "name": "MPhil in Engineering",
+    "school": "University of Cambridge",
+    "country": "GB",
+    "degree": "master",
+    "field": "Engineering",
+    "apply_url": "https://www.postgraduate.study.cam.ac.uk/courses/directory/egegmpengg",
+    "monitor_url": "https://www.postgraduate.study.cam.ac.uk/courses/directory/egegmpengg",
+    "monitor_selector": ".course-availability"
+  },
+  {
+    "name": "PhD in Computer Science",
+    "school": "University of Cambridge",
+    "country": "GB",
+    "degree": "phd",
+    "field": "Computer Science",
+    "apply_url": "https://www.postgraduate.study.cam.ac.uk/courses/directory/cscspdcs",
+    "monitor_url": "https://www.postgraduate.study.cam.ac.uk/courses/directory/cscspdcs"
+  },
+  {
+    "name": "Master of Science in Computer Science",
+    "school": "ETH Zurich",
+    "country": "CH",
+    "degree": "master",
+    "field": "Computer Science",
+    "apply_url": "https://ethz.ch/en/studies/master/application.html",
+    "monitor_url": "https://ethz.ch/en/studies/master/degree-programmes/engineering-sciences/computer-science.html",
+    "monitor_selector": ".application-period"
+  },
+  {
+    "name": "Master of Science in Data Science",
+    "school": "ETH Zurich",
+    "country": "CH",
+    "degree": "master",
+    "field": "Data Science",
+    "apply_url": "https://ethz.ch/en/studies/master/application.html",
+    "monitor_url": "https://ethz.ch/en/studies/master/degree-programmes/engineering-sciences/data-science.html",
+    "monitor_selector": ".application-period"
+  },
+  {
+    "name": "Master of Computing",
+    "school": "National University of Singapore",
+    "country": "SG",
+    "degree": "master",
+    "field": "Computer Science",
+    "apply_url": "https://www.comp.nus.edu.sg/programmes/pg/mcomp/admissions/",
+    "monitor_url": "https://www.comp.nus.edu.sg/programmes/pg/mcomp/admissions/",
+    "monitor_selector": ".application-status"
+  },
+  {
+    "name": "Master of Science in Financial Engineering",
+    "school": "National University of Singapore",
+    "country": "SG",
+    "degree": "master",
+    "field": "Financial Engineering",
+    "apply_url": "https://risk.nus.edu.sg/msfe/admissions/",
+    "monitor_url": "https://risk.nus.edu.sg/msfe/admissions/"
+  },
+  {
+    "name": "PhD in Computer Science",
+    "school": "National University of Singapore",
+    "country": "SG",
+    "degree": "phd",
+    "field": "Computer Science",
+    "apply_url": "https://www.comp.nus.edu.sg/programmes/pg/phd/admissions/",
+    "monitor_url": "https://www.comp.nus.edu.sg/programmes/pg/phd/admissions/"
+  }
+]
