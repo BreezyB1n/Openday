@@ -1,0 +1,292 @@
+universities:
+  - name: "Massachusetts Institute of Technology"
+    country: US
+    programs:
+      - name: "Master of Science in Computer Science"
+        degree: master
+        field: "Computer Science"
+        apply_url: "https://gradadmissions.mit.edu/programs/eecs"
+        monitor_url: "https://gradadmissions.mit.edu/programs/eecs"
+        deadline: "2025-12-15"
+        status: "open"
+        language_req: "TOEFL 100 / IELTS 7.0"
+        gpa_req: 3.5
+        fee: 75
+        description: "MIT的计算机科学硕士项目专为希望深化计算机科学理论、系统与应用专业知识的学生设计，是全球顶尖的技术研究型项目。"
+        internship_credit: false
+        work_auth_note: "OPT 毕业后可用"
+        core_courses:
+          - "Operating Systems"
+          - "Algorithms"
+          - "Distributed Systems"
+          - "Machine Learning"
+          - "Computer Architecture"
+
+      - name: "Master of Science in Electrical Engineering"
+        degree: master
+        field: "Electrical Engineering"
+        apply_url: "https://gradadmissions.mit.edu/programs/eecs"
+        monitor_url: "https://gradadmissions.mit.edu/programs/eecs"
+        deadline: "2025-12-15"
+        status: "open"
+        language_req: "TOEFL 100 / IELTS 7.0"
+        gpa_req: 3.5
+        fee: 75
+        description: "MIT电气工程硕士项目涵盖信号处理、通信系统、集成电路与电力电子等方向，拥有世界一流的研究实验室资源。"
+        internship_credit: false
+        work_auth_note: "OPT 毕业后可用"
+        core_courses:
+          - "Signal Processing"
+          - "VLSI Design"
+          - "Control Systems"
+          - "Power Electronics"
+          - "Communications"
+
+      - name: "PhD in Computer Science"
+        degree: phd
+        field: "Computer Science"
+        apply_url: "https://gradadmissions.mit.edu/programs/eecs/phd"
+        monitor_url: "https://gradadmissions.mit.edu/programs/eecs/phd"
+        deadline: "2025-12-15"
+        status: "open"
+        language_req: "TOEFL 100 / IELTS 7.0"
+        gpa_req: 3.7
+        fee: 75
+        description: "MIT计算机科学博士项目培养具有前沿研究能力的顶尖学者，研究方向涵盖AI、系统、理论计算机科学等核心领域。"
+        internship_credit: false
+        work_auth_note: "OPT 毕业后可用"
+        core_courses:
+          - "Advanced Algorithms"
+          - "Complexity Theory"
+          - "Distributed Systems"
+          - "ML Theory"
+
+  - name: "Stanford University"
+    country: US
+    programs:
+      - name: "Master of Science in Computer Science"
+        degree: master
+        field: "Computer Science"
+        apply_url: "https://cs.stanford.edu/admissions/masters-admissions"
+        monitor_url: "https://cs.stanford.edu/admissions/masters-admissions"
+        monitor_selector: ".application-status"
+        deadline: "2026-01-15"
+        status: "open"
+        language_req: "TOEFL 100 / IELTS 7.0"
+        gpa_req: 3.5
+        fee: 125
+        description: "斯坦福计算机科学硕士提供人工智能、系统、理论、人机交互等多个专业方向，毕业生遍布硅谷顶级科技公司。"
+        internship_credit: true
+        work_auth_note: "CPT 在读期间 / OPT 毕业后"
+        core_courses:
+          - "Machine Learning"
+          - "Systems"
+          - "Artificial Intelligence"
+          - "Computer Vision"
+          - "Natural Language Processing"
+
+      - name: "Master of Business Administration"
+        degree: master
+        field: "Business Administration"
+        apply_url: "https://www.gsb.stanford.edu/programs/mba/admission"
+        monitor_url: "https://www.gsb.stanford.edu/programs/mba/admission"
+        monitor_selector: ".apply-now-btn"
+        deadline: "2026-04-08"
+        status: "pending"
+        language_req: "TOEFL 109 / IELTS 7.5"
+        gpa_req: 3.5
+        fee: 275
+        description: "斯坦福商学院MBA以培养具有创业精神的领导者著称，录取率极低，是全球竞争最激烈的商科项目之一。"
+        internship_credit: true
+        work_auth_note: "OPT 毕业后可用"
+        core_courses:
+          - "Strategy"
+          - "Finance"
+          - "Leadership"
+          - "Operations"
+          - "Entrepreneurship"
+
+      - name: "PhD in Electrical Engineering"
+        degree: phd
+        field: "Electrical Engineering"
+        apply_url: "https://ee.stanford.edu/admissions/phd"
+        monitor_url: "https://ee.stanford.edu/admissions/phd"
+        deadline: "2025-12-01"
+        status: "closed"
+        language_req: "TOEFL 89 / IELTS 7.0"
+        gpa_req: 3.7
+        fee: 125
+        description: "斯坦福电气工程博士项目在半导体、无线通信、光子学与能源系统等方向具有全球领先的研究水平。"
+        internship_credit: false
+        work_auth_note: "OPT 毕业后可用"
+        core_courses:
+          - "Signal Processing"
+          - "RF Systems"
+          - "Semiconductor Devices"
+          - "Control Theory"
+
+  - name: "University of Cambridge"
+    country: UK
+    programs:
+      - name: "MPhil in Advanced Computer Science"
+        degree: master
+        field: "Computer Science"
+        apply_url: "https://www.postgraduate.study.cam.ac.uk/courses/directory/cscsmpacs"
+        monitor_url: "https://www.postgraduate.study.cam.ac.uk/courses/directory/cscsmpacs"
+        monitor_selector: ".course-availability"
+        deadline: "2026-03-31"
+        status: "open"
+        language_req: "IELTS 7.5 / TOEFL 110"
+        gpa_req: 3.7
+        fee: 75
+        description: "剑桥高级计算机科学MPhil是为期一年的授课型硕士，涵盖机器学习、系统、安全等方向，学术氛围浓厚。"
+        internship_credit: false
+        work_auth_note: "PSW 2年，毕业后"
+        core_courses:
+          - "Machine Learning"
+          - "Advanced Algorithms"
+          - "Security"
+          - "Distributed Systems"
+
+      - name: "MPhil in Engineering"
+        degree: master
+        field: "Engineering"
+        apply_url: "https://www.postgraduate.study.cam.ac.uk/courses/directory/egegmpmeg"
+        monitor_url: "https://www.postgraduate.study.cam.ac.uk/courses/directory/egegmpmeg"
+        monitor_selector: ".course-availability"
+        deadline: "2026-03-31"
+        status: "open"
+        language_req: "IELTS 7.5 / TOEFL 110"
+        gpa_req: 3.5
+        fee: 75
+        description: "剑桥工程MPhil提供机械、土木、电气等多个工程子方向，学生可在世界顶尖工程实验室中开展研究。"
+        internship_credit: false
+        work_auth_note: "PSW 2年，毕业后"
+        core_courses:
+          - "Structural Analysis"
+          - "Thermodynamics"
+          - "Control"
+          - "Materials Science"
+
+      - name: "PhD in Computer Science"
+        degree: phd
+        field: "Computer Science"
+        apply_url: "https://www.postgraduate.study.cam.ac.uk/courses/directory/cscspdpcs"
+        monitor_url: "https://www.postgraduate.study.cam.ac.uk/courses/directory/cscspdpcs"
+        deadline: "2026-05-01"
+        status: "pending"
+        language_req: "IELTS 7.5 / TOEFL 110"
+        gpa_req: 3.8
+        fee: 75
+        description: "剑桥计算机科学博士以研究深度和学术声誉享誉全球，是希望从事顶尖学术或工业研究的学生的首选。"
+        internship_credit: false
+        work_auth_note: "PSW 2年，毕业后"
+        core_courses:
+          - "Research Methods"
+          - "Advanced Computing"
+          - "Verification"
+
+  - name: "ETH Zurich"
+    country: CH
+    programs:
+      - name: "Master of Science in Computer Science"
+        degree: master
+        field: "Computer Science"
+        apply_url: "https://ethz.ch/en/studies/master/application.html"
+        monitor_url: "https://ethz.ch/en/studies/master/degree-programmes/engineering-sciences/computer-science.html"
+        monitor_selector: ".application-period"
+        deadline: "2025-12-15"
+        status: "open"
+        language_req: "IELTS 7.0 / TOEFL 95"
+        gpa_req: 3.5
+        fee: 0
+        description: "苏黎世联邦理工学院计算机科学硕士是欧洲最顶尖的CS项目，无申请费，课程覆盖理论计算机科学至应用系统。"
+        internship_credit: true
+        work_auth_note: "瑞士居留许可，需申请"
+        core_courses:
+          - "Algorithms"
+          - "Distributed Systems"
+          - "Machine Learning"
+          - "Formal Methods"
+          - "Compilers"
+
+      - name: "Master of Science in Data Science"
+        degree: master
+        field: "Data Science"
+        apply_url: "https://ethz.ch/en/studies/master/application.html"
+        monitor_url: "https://ethz.ch/en/studies/master/degree-programmes/engineering-sciences/data-science.html"
+        monitor_selector: ".application-period"
+        deadline: "2025-12-15"
+        status: "open"
+        language_req: "IELTS 7.0 / TOEFL 95"
+        gpa_req: 3.5
+        fee: 0
+        description: "ETH Zurich数据科学硕士融合统计学、机器学习与计算机科学，强调数学基础与工程实践能力的结合。"
+        internship_credit: true
+        work_auth_note: "瑞士居留许可，需申请"
+        core_courses:
+          - "Statistics"
+          - "Machine Learning"
+          - "Data Engineering"
+          - "Probabilistic AI"
+          - "Optimization"
+
+  - name: "National University of Singapore"
+    country: SG
+    programs:
+      - name: "Master of Computing"
+        degree: master
+        field: "Computer Science"
+        apply_url: "https://www.comp.nus.edu.sg/programmes/pg/mcs/application/"
+        monitor_url: "https://www.comp.nus.edu.sg/programmes/pg/mcs/admissions/"
+        monitor_selector: ".application-status"
+        deadline: "2026-02-28"
+        status: "closed"
+        language_req: "TOEFL 85 / IELTS 6.0"
+        gpa_req: 3.2
+        fee: 50
+        description: "新加坡国立大学计算机硕士项目是亚洲领先的CS研究生项目，提供通用计算和人工智能两个专业方向。"
+        internship_credit: true
+        work_auth_note: "EP/IPA 工作准证可申请"
+        core_courses:
+          - "Algorithms"
+          - "Systems"
+          - "Artificial Intelligence"
+          - "Software Engineering"
+
+      - name: "Master of Science in Financial Engineering"
+        degree: master
+        field: "Financial Engineering"
+        apply_url: "https://rmi.nus.edu.sg/mfe-program/admission/"
+        monitor_url: "https://rmi.nus.edu.sg/mfe-program/admission/"
+        deadline: "2026-03-15"
+        status: "pending"
+        language_req: "TOEFL 85 / IELTS 6.0"
+        gpa_req: 3.3
+        fee: 50
+        description: "NUS金融工程硕士培养具备量化分析、风险管理和衍生品定价能力的金融科技复合型人才。"
+        internship_credit: true
+        work_auth_note: "EP/IPA 工作准证可申请"
+        core_courses:
+          - "Derivatives"
+          - "Risk Management"
+          - "Fixed Income"
+          - "Quantitative Methods"
+
+      - name: "PhD in Computer Science"
+        degree: phd
+        field: "Computer Science"
+        apply_url: "https://www.comp.nus.edu.sg/programmes/pg/phdcs/application/"
+        monitor_url: "https://www.comp.nus.edu.sg/programmes/pg/phdcs/admissions/"
+        deadline: "2025-11-30"
+        status: "closed"
+        language_req: "TOEFL 85 / IELTS 6.0"
+        gpa_req: 3.5
+        fee: 50
+        description: "NUS计算机科学博士项目在亚洲排名第一，提供全额奖学金，研究方向涵盖系统、AI、网络安全与数据库。"
+        internship_credit: false
+        work_auth_note: "EP/IPA 工作准证可申请"
+        core_courses:
+          - "Research Methodology"
+          - "Advanced Systems"
+          - "ML Theory"
